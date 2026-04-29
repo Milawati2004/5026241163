@@ -22,7 +22,8 @@ Route::get('biodata', [DosenController::class, 'biodata']);
 Route::get('menu', function () {
     return view('menu');
 });
-    //Milawati2004.github.io
+
+//Milawati2004.github.io
 Route::get('ind', function () {
     return view('index');
 });
@@ -35,7 +36,7 @@ Route::get('pert5', function () {
 	return view('pertemuan5');
 });
 
-    //FE5026241163
+//FE5026241163
 Route::get('/intro', function () {
     return view('intro');
 });
