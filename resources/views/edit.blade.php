@@ -49,7 +49,7 @@
 
                     <div class="row">
                         <div class="offset-sm-2 col-sm-10">
-                            <input type="submit" value="Simpan Data" class="btn btn-primary">
+                             <input type="submit" value="Simpan Data" class="btn btn-primary">
                         </div>
                     </div>
 
