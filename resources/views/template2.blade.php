@@ -14,16 +14,16 @@
     <div class="container">
         <div class="mt-4 p-5 bg-primary text-white rounded">
             <h3>5026241163 Milawati</h3>
-            <p>@yield('judul halaman')</p>
+            <p>@yield('judul_halaman')</p>
         </div>
-        <nav class="navbar navbar-expand-sm bg-primary navbar-light">
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
             <div class="container-fluid">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Pegawai</a>
+                        <a class="nav-link" href="/pegawai">Pegawai</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nama Tabel PR</a>
+                        <a class="nav-link" href="/bus">Bus</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Siswa</a>

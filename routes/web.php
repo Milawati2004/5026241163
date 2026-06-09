@@ -5,6 +5,7 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\BusDBController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -84,3 +85,10 @@ Route::get('/pegawai/update', [PegawaiDBController::class, 'update']);
 Route::post('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
 Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
 
+Route::get('/bus', [BusDBController::class, 'indexbus']);
+Route::get('/bus/tambah', [BusDBController::class, 'tambah']);
+Route::post('/bus/store', [BusDBController::class, 'store']);
+Route::get('/bus/edit/{kode}', [BusDBController::class, 'edit']);
+Route::post('/bus/update', [BusDBController::class, 'update']);
+Route::get('/bus/hapus/{kode}', [BusDBController::class, 'hapus']);
+Route::post('/bus/cari', [BusDBController::class, 'cari']);
