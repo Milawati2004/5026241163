@@ -34,7 +34,14 @@
                 <td>{{ $b->kodebus }}</td>
                 <td>{{ $b->merkbus }}</td>
                 <td>{{ $b->jumlahbus }}</td>
-                <td>{{ $b->tersedia }}</td>
+
+                <td>
+                    @if($b->tersedia == 'Y')
+                        <span class="badge bg-success">Tersedia</span>
+                    @else
+                        <span class="badge bg-danger">Tidak Tersedia</span>
+                    @endif
+                </td>
 
                 <td>
                     <a href="/bus/edit/{{ $b->kodebus }}" class="btn btn-warning">Edit</a>
