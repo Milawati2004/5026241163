@@ -7,6 +7,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\BusDBController;
+use App\Http\Controllers\NilaiKuliahController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -100,3 +101,7 @@ Route::get('/bus/edit/{kode}', [BusDBController::class, 'edit']);
 Route::post('/bus/update', [BusDBController::class, 'update']);
 Route::get('/bus/hapus/{kode}', [BusDBController::class, 'hapus']);
 Route::post('/bus/cari', [BusDBController::class, 'cari']);
+//route Nilai Kuliah
+Route::get('/nilaikuliah', [NilaiKuliahController::class, 'indexnilaikuliah']);
+Route::get('/nilaikuliah/tambah', [NilaiKuliahController::class, 'tambah']);
+Route::post('/nilaikuliah/store', [NilaiKuliahController::class, 'store']);
