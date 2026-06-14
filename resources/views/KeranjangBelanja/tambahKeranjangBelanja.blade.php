@@ -1,5 +1,5 @@
 @extends('template2')
-@section('title', 'Tambah Keranjang Belanja')
+@section('judul_halaman', 'Tambah Keranjang Belanja')
 @section('konten')
 
     <div class="card">
