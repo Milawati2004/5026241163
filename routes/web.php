@@ -8,6 +8,7 @@ use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\BusDBController;
 use App\Http\Controllers\NilaiKuliahController;
+use App\Http\Controllers\KeranjangBelanjaDBController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -105,3 +106,8 @@ Route::post('/bus/cari', [BusDBController::class, 'cari']);
 Route::get('/nilaikuliah', [NilaiKuliahController::class, 'indexnilaikuliah']);
 Route::get('/nilaikuliah/tambah', [NilaiKuliahController::class, 'tambah']);
 Route::post('/nilaikuliah/store', [NilaiKuliahController::class, 'store']);
+//route Keranjang Belanja
+Route::get('/keranjangbelanja', [KeranjangBelanjaDBController::class, 'index'])->name('keranjangbelanja.index');
+Route::get('/keranjangbelanja/tambah', [KeranjangBelanjaDBController::class, 'tambah'])->name('keranjangbelanja.tambah');
+Route::post('/keranjangbelanja', [KeranjangBelanjaDBController::class, 'store'])->name('keranjangbelanja.store');
+Route::delete('/keranjangbelanja/{id}', [KeranjangBelanjaDBController::class, 'destroy'])->name('keranjangbelanja.destroy');
