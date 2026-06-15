@@ -35,7 +35,7 @@
                         <a class="nav-link" href="/keranjangbelanja">Latihan 2</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">EAS</a>
+                        <a class="nav-link" href="/eas">Tagihan Air</a>
                     </li>
                 </ul>
             </div>

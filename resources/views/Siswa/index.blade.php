@@ -1,5 +1,5 @@
 @extends('template2')
-@section('title', 'Data Siswa')
+@section('judul_halaman', 'Data Siswa')
 @section('konten')
 
     <h2>Data Siswa</h2>

@@ -9,6 +9,7 @@ use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\BusDBController;
 use App\Http\Controllers\NilaiKuliahController;
 use App\Http\Controllers\KeranjangBelanjaDBController;
+use App\Http\Controllers\TagihanAirController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -111,3 +112,7 @@ Route::get('/keranjangbelanja', [KeranjangBelanjaDBController::class, 'index'])-
 Route::get('/keranjangbelanja/tambah', [KeranjangBelanjaDBController::class, 'tambah'])->name('keranjangbelanja.tambah');
 Route::post('/keranjangbelanja', [KeranjangBelanjaDBController::class, 'store'])->name('keranjangbelanja.store');
 Route::delete('/keranjangbelanja/{id}', [KeranjangBelanjaDBController::class, 'destroy'])->name('keranjangbelanja.destroy');
+//route Tagihan Air
+Route::get('/eas', [TagihanAirController::class, 'index']);
+Route::get('/eas/tambah', [TagihanAirController::class, 'tambah']);
+Route::post('/eas/store', [TagihanAirController::class, 'store']);
